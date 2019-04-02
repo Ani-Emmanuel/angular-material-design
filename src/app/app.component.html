@@ -1,0 +1,19 @@
+<mat-toolbar color="primary" class="fixed-header">
+  <mat-toolbar-row>
+    <span
+      ><img
+        src="assets/icon.png"
+        alt="image"
+        style="width: 45px; margin-top: 10px"
+      />
+    </span>
+    <a mat-button routerLink="/customer-list" routerLinkActive="active"
+      >Customers</a
+    >
+    <a mat-button routerLink="/customer-create">Create Customer</a>
+    <a mat-button routerLink="/login">Login</a>
+  </mat-toolbar-row>
+</mat-toolbar>
+<main>
+  <router-outlet style="margin-top:80px;"></router-outlet>
+</main>
