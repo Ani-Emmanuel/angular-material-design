@@ -9,13 +9,15 @@ import { CustomerCreateComponent } from "./customer-create/customer-create.compo
 import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
 import { MyMaterialModule } from "./material.module";
 import { FormsModule } from "@angular/forms";
+import { ErrorComponent } from "./error.component";
 
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
     CustomerListComponent,
-    CustomerCreateComponent
+    CustomerCreateComponent,
+    ErrorComponent
   ],
   imports: [
     BrowserModule,
@@ -24,6 +26,7 @@ import { FormsModule } from "@angular/forms";
     MyMaterialModule,
     FormsModule
   ],
+  entryComponents: [ErrorComponent],
   providers: [],
   bootstrap: [AppComponent]
 })
